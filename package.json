@@ -22,6 +22,7 @@
     "@typescript-eslint/parser": "^4.0.0",
     "cz-conventional-changelog": "3.3.0",
     "eslint": "^7.32.0",
+    "eslint-formatter-rdjson": "^1.0.5",
     "husky": "^7.0.1",
     "jest": "^27.0.6",
     "lint-staged": ">=10",

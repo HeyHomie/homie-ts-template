@@ -1579,6 +1579,11 @@ eslint-config-standard@^16.0.2:
   resolved "https://registry.yarnpkg.com/eslint-config-standard/-/eslint-config-standard-16.0.3.tgz#6c8761e544e96c531ff92642eeb87842b8488516"
   integrity sha512-x4fmJL5hGqNJKGHSjnLdgA6U6h1YW/G2dW9fA+cyVur4SK6lyue8+UgNKWlZtUDTXvgKDD/Oa3GQjmB5kjtVvg==
 
+eslint-formatter-rdjson@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/eslint-formatter-rdjson/-/eslint-formatter-rdjson-1.0.5.tgz#d8c384c3d13c497f8596543e6285dec1087fd1ba"
+  integrity sha512-z275VEQgzmAF04yTRvvl1DbEMEczVb9pGUoj31zzydBTn/gYcKLUIxLEXRzpWqh4llOYMuICICAHFbdF/yA28A==
+
 eslint-import-resolver-node@^0.3.5:
   version "0.3.5"
   resolved "https://registry.yarnpkg.com/eslint-import-resolver-node/-/eslint-import-resolver-node-0.3.5.tgz#939bbb0f74e179e757ca87f7a4a890dabed18ac4"
