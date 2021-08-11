@@ -33,6 +33,15 @@
       "path": "./node_modules/cz-conventional-changelog"
     }
   },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 80,
+        "functions": 80,
+        "lines": 80
+      }
+    }
+  },
   "lint-staged": {
     "*.{js,ts}": "ts-standard --cache --fix",
     "*.{js,ts,css,md,json}": "prettier --write"
