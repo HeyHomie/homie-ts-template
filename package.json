@@ -1,0 +1,40 @@
+{
+  "name": "homie-ts-template",
+  "version": "1.0.0",
+  "description": "Typescript Library Template",
+  "main": "lib/index.js",
+  "repository": "https://github.com/HeyHomie/homie-ts-template",
+  "author": "Ale Ornelas",
+  "license": "private",
+  "private": true,
+  "dependencies": {},
+  "type": "module",
+  "scripts": {
+    "test": "jest",
+    "build": "tsc",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.0.0",
+    "@typescript-eslint/parser": "^4.0.0",
+    "cz-conventional-changelog": "3.3.0",
+    "eslint": "^7.32.0",
+    "husky": "^7.0.1",
+    "jest": "^27.0.6",
+    "lint-staged": ">=10",
+    "prettier": "^2.3.2",
+    "prettier-config-standard": "^4.0.0",
+    "ts-jest": "^27.0.4",
+    "ts-standard": "^10.0.0",
+    "typescript": "^4.3.5"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts}": "ts-standard --cache --fix",
+    "*.{js,ts,css,md,json}": "prettier --write"
+  }
+}
