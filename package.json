@@ -1,9 +1,12 @@
 {
-  "name": "homie-ts-template",
+  "name": "@heyhomie/homie-ts-template",
   "version": "1.0.0",
   "description": "Typescript Library Template",
   "main": "lib/index.js",
-  "repository": "https://github.com/HeyHomie/homie-ts-template",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HeyHomie/homie-ts-template.git"
+  },
   "author": "Ale Ornelas",
   "license": "private",
   "private": true,

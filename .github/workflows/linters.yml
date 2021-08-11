@@ -1,0 +1,29 @@
+name: Linters
+
+on: pull_request
+
+jobs:
+  base:
+    name: Base Package ESLint
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: packages/base
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Use Node.js 14
+        uses: actions/setup-node@v1
+        with:
+          node-version: 14.x
+      - uses: reviewdog/action-setup@v1
+        with:
+          reviewdog_version: latest
+      - uses: c-hive/gha-yarn-cache@v2
+      - name: Install NPM Packages
+        run: yarn install
+      - name: Setup Reporter
+        run: yarn add --dev eslint-formatter-rdjson
+      - name: Review Dog (Standard) 
+        run: yarn run ts-standard --report rdjson . | reviewdog -f=rdjson -reporter=github-pr-review
+
